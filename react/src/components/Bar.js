@@ -3,6 +3,7 @@ import Review from './Review';
 
 const Bar = ({id, onClick, active, averageRating, editable, name, url, reviews}) => {
   let showReviews;
+  
   if(active) {
     showReviews = reviews.map(review => {
       return(

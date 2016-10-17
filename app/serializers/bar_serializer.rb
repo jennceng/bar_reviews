@@ -17,6 +17,7 @@ class BarSerializer < ActiveModel::Serializer
   def editable
     scope.admin?
     # || object.creator?(scope)
+    # what is scope?
   end
 end
 

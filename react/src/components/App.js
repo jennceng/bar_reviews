@@ -54,7 +54,7 @@ class App extends Component {
     })
     return(
       <div className="bars">
-        <h1> Bars </h1>
+        <h1 className="page-title"> Bars </h1>
         {bars}
       </div>
     )

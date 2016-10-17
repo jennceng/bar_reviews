@@ -1,8 +1,17 @@
 // @import "*";
 
+.page-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
 .bars {
   text-align: center;
   font-family: monospace;
+}
+
+.bar {
+  margin-bottom: 20px;
 }
 
 .rating {

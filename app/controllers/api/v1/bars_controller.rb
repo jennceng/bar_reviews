@@ -4,14 +4,4 @@ class Api::V1::BarsController < ApplicationController
     render json: @bars
     # the above automatically uses the bar_serializer
   end
-
-  def show
-    selected_bar
-  end
-
-  protected
-
-  def selected_bar
-    Bar.find(params[:id])
-  end
 end

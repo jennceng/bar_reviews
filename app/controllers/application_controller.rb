@@ -8,4 +8,11 @@ class ApplicationController < ActionController::Base
   else
     Rails.application.routes.default_url_options[:host] = 'heroku.com/myawesomeappname'
   end
+
+  private
+
+  def current_user
+    OpenStruct.new(admin?: false)
+  end
+  helper_method :current_user
 end

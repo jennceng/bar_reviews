@@ -9,7 +9,7 @@ class Api::V1::BarsController < ApplicationController
     selected_bar
   end
 
-  private
+  protected
 
   def selected_bar
     Bar.find(params[:id])

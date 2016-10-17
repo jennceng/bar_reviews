@@ -2,7 +2,7 @@ class BarSerializer < ActiveModel::Serializer
   attributes :id,
   :name,
   :url,
-  :average_rating,
+  :average_rating
   # ,:reviews
 
   # the below uses the review serializer unlike line 6 which gives all the info

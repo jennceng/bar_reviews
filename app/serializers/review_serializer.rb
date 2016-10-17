@@ -1,4 +1,3 @@
 class ReviewSerializer < ActiveModel::Serializer
-  binding.pry
-  attributes :id, :rating
+  attributes :id, :rating, :body
 end

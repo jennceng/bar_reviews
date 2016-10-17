@@ -1,6 +1,6 @@
 // @import "*";
 
-.page-title {
+.page-title, .bar-name {
   font-size: 50px;
   margin-bottom: 30px;
 }
@@ -14,7 +14,11 @@
   margin-bottom: 20px;
 }
 
-.rating {
+.review {
   border: 10px solid black;
   margin: 2px;
+}
+
+.bar-info {
+  font-size: 30px;
 }

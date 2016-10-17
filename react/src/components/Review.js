@@ -2,7 +2,7 @@ import React from 'react';
 
 const Review = ({ rating, body }) => {
   return(
-    <div className="rating">
+    <div className="review">
       <h3> Review </h3>
       <p>
         Rating: {rating}

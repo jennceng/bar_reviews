@@ -1,8 +1,7 @@
 import React from 'react';
 import Review from './Review';
 
-const Bar = ({id, onClick, active, average_rating, editable, name, url, reviews}) => {
-  debugger;
+const Bar = ({id, onClick, active, averageRating, editable, name, url, reviews}) => {
   let showReviews;
   if(active) {
     showReviews = reviews.map(review => {
@@ -17,12 +16,14 @@ const Bar = ({id, onClick, active, average_rating, editable, name, url, reviews}
     })
   }
   return(
-    <div>
+    <div className="bar">
       <div onClick={onClick}>
-        Name: {name}
-        Average Rating: {average_rating}
-        <a href={url}> Click for more details </a>
+        <h2>{name}</h2>
+        Average Rating: {averageRating}
         {showReviews}
+      </div>
+      <div>
+        <a href={url}> Click for more details </a>
       </div>
     </div>
   )

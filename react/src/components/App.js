@@ -12,7 +12,11 @@ class App extends Component {
   }
 
   handleClick(id) {
-    this.setState({ chosenBarId: id });
+    if (this.state.chosenBarId === id) {
+      this.setState({ chosenBarId: null})
+    } else {
+      this.setState({ chosenBarId: id });
+    }
   }
 
   componentDidMount() {
@@ -41,6 +45,7 @@ class App extends Component {
           id={bar.id}
           active={active}
           name={bar.name}
+          averageRating={bar.average_rating}
           reviews={bar.reviews}
           url={bar.url}
           onClick={onClick}
@@ -48,7 +53,7 @@ class App extends Component {
       )
     })
     return(
-      <div>
+      <div className="bars">
         <h1> Bars </h1>
         {bars}
       </div>

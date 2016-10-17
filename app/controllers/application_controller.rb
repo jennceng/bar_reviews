@@ -5,5 +5,7 @@ class ApplicationController < ActionController::Base
 
   if !Rails.env.production?
     Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+  else
+    Rails.application.routes.default_url_options[:host] = 'heroku.com/myawesomeappname'
   end
 end

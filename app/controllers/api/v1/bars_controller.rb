@@ -6,7 +6,7 @@ class Api::V1::BarsController < ApplicationController
   end
 
   def show
-    binding.pry
+    selected_bar
   end
 
   private

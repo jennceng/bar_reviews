@@ -20,5 +20,3 @@ class BarSerializer < ActiveModel::Serializer
     # what is scope?
   end
 end
-
-# can be made via `rails g serializer bar` or manually create the file and inherit from ActiveModel::Serializer

@@ -24,7 +24,6 @@ class App extends Component {
       url: '/api/v1/bars.json'
     })
     .done(data=> {
-      debugger;
       this.setState({ bars: data.bars })
     })
   }

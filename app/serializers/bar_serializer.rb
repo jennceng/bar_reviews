@@ -6,7 +6,7 @@ class BarSerializer < ActiveModel::Serializer
   :editable
   # ,:reviews
 
-  # the below uses the review serializer unlike line 6 which gives all the info
+  # the below uses the review serializer unlike line 7 which gives all the info
   has_many :reviews
   # embed :ids, include: true
 
@@ -17,6 +17,6 @@ class BarSerializer < ActiveModel::Serializer
   def editable
     scope.admin?
     # || object.creator?(scope)
-    # what is scope?
+    # what is scope? current_user
   end
 end

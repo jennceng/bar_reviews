@@ -17,16 +17,20 @@ ActiveRecord::Schema.define(version: 20161017125913) do
   enable_extension "plpgsql"
 
   create_table "bars", force: :cascade do |t|
-    t.string "name",               null: false
-    t.string "address",            null: false
-    t.string "cover_charge"
-    t.string "hours_of_operation"
+    t.string   "name",               null: false
+    t.string   "address",            null: false
+    t.string   "cover_charge"
+    t.string   "hours_of_operation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "bar_id", null: false
-    t.integer "rating", null: false
-    t.text    "body"
+    t.integer  "bar_id",     null: false
+    t.integer  "rating",     null: false
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
